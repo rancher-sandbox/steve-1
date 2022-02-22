@@ -1,7 +1,6 @@
 /.dapper
 /.cache
 /certs
-/bin
 /dist
 *.swp
 .idea
