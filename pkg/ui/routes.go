@@ -33,7 +33,7 @@ func (h spaHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// prepend the path with the path to the static directory
-	path = filepath.Join(h.staticPath, path)
+	path = filepath.Join(h.staticPath, r.URL.Path)
 
 	// check whether a file exists at the given path
 	_, err = os.Stat(path)
